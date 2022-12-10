@@ -68,11 +68,11 @@ const NavBar = () => {
           </span>
             </Link>
           </div>
-          <div class="relative inline-block text-left">
+          <div className="relative inline-block text-left">
             <div>
               <button
                 type="button"
-                class="inline-flex w-full justify-center rounded-md border border-blue-500  px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100"
+                className="inline-flex w-full justify-center rounded-md border border-blue-500  px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100"
                 onClick={()=>setOpenMenu(!openMenu)}
               >
                 <FaBars className="text-blue-300"/>
@@ -81,28 +81,28 @@ const NavBar = () => {
             {
               openMenu && 
               <div
-              class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="menu-button"
               tabindex="-1"
             >
-              <div class="py-1" role="none">
+              <div className="py-1" role="none">
                 <Link
                   to={'/'}
-                  class="text-gray-700 block px-4 py-2 text-sm"
+                  className="text-gray-700 block px-4 py-2 text-sm"
                 >
                   Home
                 </Link>
                 <Link
                   to={'/projects'}
-                  class="text-gray-700 block px-4 py-2 text-sm"
+                  className="text-gray-700 block px-4 py-2 text-sm"
                 >
                   Projects
                 </Link>
                 <Link
                   to={'/'}
-                  class="text-gray-700 block px-4 py-2 text-sm"
+                  className="text-gray-700 block px-4 py-2 text-sm"
                 >
                   Download Resume
                 </Link>

@@ -1,8 +1,20 @@
 import React from "react";
+import { useForm } from "react-hook-form";
+import SendEmail from "./SendEmail";
 
 const Contact = () => {
+  const { register, handleSubmit, reset } = useForm();
+  const handleFormData = (data) => {
+    const message = data.message + ` Mobile Number: ${data.number}`;
+    SendEmail(data.name, data.email, message);
+    reset();
+  };
+
   return (
-    <section data-aos="fade-left" className=" h-[700px] text-gray-50 relative md:pt-48 pt-10">
+    <section
+      data-aos="fade-left"
+      className=" h-[700px] text-gray-50 relative md:pt-48 pt-10"
+    >
       <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 md:py-0 md:px-6">
           <h1 className="text-4xl font-bold">Get in touch</h1>
@@ -16,9 +28,9 @@ const Contact = () => {
                 className="w-5 h-5 mr-2 sm:mr-6"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
               <span>Dhaka, Bangladesh</span>
@@ -49,14 +61,15 @@ const Contact = () => {
           </div>
         </div>
         <form
-          novalidate=""
+          onSubmit={handleSubmit(handleFormData)}
           className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
         >
           <label className="block">
             <span className="mb-1">Full name</span>
             <input
               type="text"
-              placeholder="Leroy Jenkins"
+              {...register("name", { required: true })}
+              placeholder="FirstName LastName"
               className="block w-full px-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800"
             />
           </label>
@@ -64,27 +77,30 @@ const Contact = () => {
             <span className="mb-1">Email address</span>
             <input
               type="email"
-              placeholder="leroy@jenkins.com"
+              {...register("email", { required: true })}
+              placeholder="youremail@ymail.com"
               className="block w-full px-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800"
             />
           </label>
           <label className="block">
             <span className="mb-1">Mobile Number</span>
             <input
-              type="email"
-              placeholder="leroy@jenkins.com"
+              type="number"
+              {...register("number")}
+              placeholder="your mobile number"
               className="block w-full px-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800"
             />
           </label>
           <label className="block">
             <span className="mb-1">Message</span>
             <textarea
+              {...register("message")}
               rows="3"
               className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800"
             ></textarea>
           </label>
           <button
-            type="button"
+            type="submit"
             className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-violet-400 text-gray-900 focus:ring-violet-400 hover:ring-violet-400"
           >
             Submit
