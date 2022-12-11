@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import AboutMe from "../components/AboutMe";
 import BuyTop from "../components/BuyTop";
 import Contact from "../components/Contact";
 import Dentisia from "../components/Dentisia";
@@ -35,6 +36,10 @@ export const routes = createBrowserRouter([
             {
                 path:'/learningpoint',
                 element:<LearningPoint></LearningPoint>
+            },
+            {
+                path:'/aboutme',
+                element:<AboutMe></AboutMe>
             }
         ]
     }

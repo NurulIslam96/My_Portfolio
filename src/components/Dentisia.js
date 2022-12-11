@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
 import image1 from "../assets/projects/dentisia/dentisia-client-side.web.app_ (1).png";
 import image2 from "../assets/projects/dentisia/dentisia-client-side.web.app_addservice.png";
 import image3 from "../assets/projects/dentisia/dentisia-client-side.web.app_services_6369703d4d083ca9ccdc3652.png";
+import {FaBackward} from 'react-icons/fa'
+import { Link } from "react-router-dom";
 
 const Dentisia = () => {
   return (
@@ -11,7 +12,7 @@ const Dentisia = () => {
       data-aos="fade-left"
       className="flex lg:flex-row flex-col gap-10 lg:justify-center justify-self-auto items-center lg:h-[700px] mg:px-0 px-5"
     >
-      <div className="w-96">
+      <div className="w-96 mt-5">
         <Slide>
           <div className="each-slide">
             <img src={image1} className="object-fit h-96 w-96" alt="" />
@@ -85,6 +86,7 @@ const Dentisia = () => {
           </div>
         </div>
       </div>
+      <Link to={'/projects'} className="bg-gradient-to-r from-yellow-600 to-yellow-700 text-white cursor-pointer px-5 py-2 rounded-md"><FaBackward/></Link>
     </div>
   );
 };

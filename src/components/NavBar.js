@@ -11,7 +11,7 @@ const NavBar = () => {
       <div className="md:block hidden">
         <nav className="text-white bg-white bg-opacity-5 relative rounded-md px-5 container mx-auto flex items-center justify-between py-8">
           <div className="h-16 lg:w-64 md:w-32  flex justify-center items-center">
-            <Link className="h-16 lg:w-64 md:w-32  bg-gradient-to-br from-yellow-600 to-yellow-700 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"></Link>
+            <Link to={'/'} className="h-16 lg:w-64 md:w-32  bg-gradient-to-br from-yellow-600 to-yellow-700 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"></Link>
             <span className="text-center text-white font-semibold z-10 pointer-events-none">
               MD. NURUL ISLAM
             </span>
@@ -19,11 +19,11 @@ const NavBar = () => {
           <div className="flex lg:gap-10 gap-2">
             <div className="mx-auto h-16 md:w-32 lg:w-64 flex justify-center items-center">
               <Link
-                to={"/"}
+                to={"/aboutme"}
                 className="h-16 lg:w-64 md:w-32  bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
               ></Link>
               <span className="text-center text-white font-semibold z-10 pointer-events-none">
-                Home
+                About Me
               </span>
             </div>
             <div className="mx-auto h-16 md:w-32  lg:w-64 flex justify-center items-center">

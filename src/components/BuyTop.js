@@ -1,4 +1,6 @@
 import React from "react";
+import { FaBackward } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
 import image1 from "../assets/projects/buytop/buy-top-client.web.app_.png";
 import image2 from "../assets/projects/buytop/buy-top-client.web.app_dashboard_allsellers (1).png";
@@ -82,6 +84,7 @@ const BuyTop = () => {
           </div>
         </div>
       </div>
+      <Link to={'/projects'} className="bg-gradient-to-r from-yellow-600 to-yellow-700 text-white cursor-pointer px-5 py-2 rounded-md"><FaBackward/></Link>
     </div>
   );
 };

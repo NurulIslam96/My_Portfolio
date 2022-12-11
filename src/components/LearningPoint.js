@@ -1,4 +1,6 @@
 import React from "react";
+import { FaBackward } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
 import image1 from "../assets/projects/learningpoint/learning-point-client-26788.web.app_ (1).png";
 import image2 from "../assets/projects/learningpoint/learning-point-client-26788.web.app_courses.png";
@@ -12,7 +14,7 @@ const LearningPoint = () => {
       data-aos="fade-left"
       className="flex lg:flex-row flex-col gap-10 lg:justify-center justify-self-auto items-center lg:h-[700px] mg:px-0 px-5"
     >
-      <div className="w-96">
+      <div className="w-96 mt-5">
         <Slide>
           <div className="each-slide">
             <img src={image1} className="object-fit h-96 w-96" alt="" />
@@ -90,6 +92,7 @@ const LearningPoint = () => {
           </div>
         </div>
       </div>
+      <Link to={'/projects'} className="bg-gradient-to-r from-yellow-600 to-yellow-700 text-white cursor-pointer px-5 py-2 rounded-md"><FaBackward/></Link>
     </div>
   );
 };
