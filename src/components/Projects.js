@@ -2,10 +2,11 @@ import React from "react";
 import BuyTop from '../assets/buytop.png'
 import Learning from '../assets/learning.png'
 import Dentisia from '../assets/dentisia.png'
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div className="relative pt-10 px-5 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 h-[700px] items-center justify-items-center">
+    <div className="relative py-5 px-5 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 h-[700px] items-center justify-items-center">
       <div data-aos="fade-right" className="max-w-xl">
         <div className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
           <span href="#">
@@ -22,11 +23,10 @@ const Projects = () => {
               </h5>
             </span>
             <p className="font-normal text-gray-700 mb-3 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
+            BuyTop allows all CRUD operations on Category and Dashboard items. It is built using MERN stack.
             </p>
-            <span
-              href="#"
+            <Link
+              to={'/buytop'}
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Read more
@@ -37,12 +37,12 @@ const Projects = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
-            </span>
+            </Link>
           </div>
         </div>
       </div>
@@ -62,11 +62,10 @@ const Projects = () => {
               </h5>
             </span>
             <p className="font-normal text-gray-700 mb-3 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
+              Learning point allows an user to get enrolled in a course they fits in. Premium access is also available.
             </p>
-            <span
-              href="#"
+            <Link
+              to={'/learningpoint'}
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Read more
@@ -77,12 +76,12 @@ const Projects = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
-            </span>
+            </Link>
           </div>
         </div>
       </div>
@@ -102,11 +101,10 @@ const Projects = () => {
               </h5>
             </span>
             <p className="font-normal text-gray-700 mb-3 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
+              Dentisia is about a single dentist service review app. Here users can add reviews on the services as well as add their own service.
             </p>
-            <span
-              href="#"
+            <Link
+              to={'/dentisia'}
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Read more
@@ -117,12 +115,12 @@ const Projects = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
-            </span>
+            </Link>
           </div>
         </div>
       </div>

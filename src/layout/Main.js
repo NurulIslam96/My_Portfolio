@@ -16,12 +16,14 @@ const Main = () => {
       overflow-x-hidden
       "
     >
-      <div className="pt-5">
-        <NavBar></NavBar>
-      </div>
-      <div className="container mx-auto">
-        <div className="bg-white my-5 bg-opacity-5 container mx-auto lg:h-[700px] md:h-screen w-full absolute rounded-md"></div>
-        <Outlet></Outlet>
+      <div className="container mx-auto space-y-10 py-5">
+        <div>
+          <NavBar></NavBar>
+        </div>
+        <div className="relative">
+          <div className="bg-white bg-opacity-5 container mx-auto lg:h-[700px] md:h-[900px] w-full absolute rounded-md"></div>
+          <Outlet></Outlet>
+        </div>
       </div>
     </div>
   );
