@@ -48,31 +48,34 @@ const BuyTop = () => {
           Stripe, React-router-dom, React-date-picker, Date-fns, React-fa-icon,
           React-hot-toast.
         </h2>
+        {/* Responsive Project Buttons */}
         <div className="flex md:flex-row flex-col gap-5 lg:justify-start md:justify-center ">
           <div className="h-16 md:w-52 flex justify-center items-center">
-            <span
-              to={"/"}
-              onClick={()=>console.log("Hello")}
+            <a
+              href="https://buy-top-client.web.app"
+              target={'_blank'}
               className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
-            ></span>
+            ></a>
             <button className="text-center text-white font-semibold z-10 pointer-events-none">
               Live Link
             </button>
           </div>
           <div className="h-16 md:w-52 flex justify-center items-center">
-            <span
-              to={"/"}
+            <a
+              href="https://github.com/NurulIslam96/BuyTop-Client"
+              target={'_blank'}
               className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
-            ></span>
+            ></a>
             <span className="text-center text-white font-semibold z-10 pointer-events-none">
               Client-Repository
             </span>
           </div>
           <div className="h-16  md:w-52 flex justify-center items-center">
-            <span
-              to={"/"}
+            <a
+            href="https://github.com/programming-hero-web-course-4/b612-used-products-resale-server-side-NurulIslam96"
+            target={'_blank'}
               className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
-            ></span>
+            ></a>
             <span className="text-center text-white font-semibold z-10 pointer-events-none">
             Server-Repository
             </span>

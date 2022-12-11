@@ -57,6 +57,38 @@ const LearningPoint = () => {
           <span className="text-xl font-semibold">Technologies Used:</span>{" "}
           ReactJS, Tailwind, MongoDB, Firebase, React-loader-spinner, React-to-pdf, React-toastify, Swiper-slider, React-icons.
         </h2>
+        <div className="flex md:flex-row flex-col gap-5 lg:justify-start md:justify-center ">
+          <div className="h-16 md:w-52 flex justify-center items-center">
+            <a
+              href="https://learning-point-client-26788.web.app/"
+              target={'_blank'}
+              className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
+            ></a>
+            <button className="text-center text-white font-semibold z-10 pointer-events-none">
+              Live Link
+            </button>
+          </div>
+          <div className="h-16 md:w-52 flex justify-center items-center">
+            <a
+              href="https://github.com/programming-hero-web-course1/b610-learning-platform-client-side-NurulIslam96"
+              target={'_blank'}
+              className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
+            ></a>
+            <span className="text-center text-white font-semibold z-10 pointer-events-none">
+              Client-Repository
+            </span>
+          </div>
+          <div className="h-16  md:w-52 flex justify-center items-center">
+            <a
+              href="https://github.com/programming-hero-web-course1/b610-lerning-platform-server-side-NurulIslam96"
+              target={'_blank'}
+              className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
+            ></a>
+            <span className="text-center text-white font-semibold z-10 pointer-events-none">
+            Server-Repository
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div className="relative py-5 px-5 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 h-[700px] items-center justify-items-center">
-      <div data-aos="fade-right" className="max-w-xl">
+    <div data-aos="fade-left" className="relative py-5 px-5 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 h-[700px] items-center justify-items-center">
+      <div className="max-w-xl">
         <div className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
           <span href="#">
             <img
@@ -46,7 +46,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div data-aos="zoom-in" className="max-w-xl">
+      <div className="max-w-xl">
         <div className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
           <span href="#">
             <img
@@ -85,7 +85,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div data-aos="fade-left" className="max-w-xl">
+      <div className="max-w-xl">
         <div className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
           <span href="#">
             <img

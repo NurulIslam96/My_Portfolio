@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
 import image1 from "../assets/projects/dentisia/dentisia-client-side.web.app_ (1).png";
 import image2 from "../assets/projects/dentisia/dentisia-client-side.web.app_addservice.png";
@@ -52,6 +53,37 @@ const Dentisia = () => {
           ReactJS, Tailwind, MongoDB, Firebase, JWT, AOS, React-helmet,
           React-icons, React-image-viewer, React-router-dom.
         </h2>
+        <div className="flex md:flex-row flex-col gap-5 lg:justify-start md:justify-center ">
+          <div className="h-16 md:w-52 flex justify-center items-center">
+            <a href="https://dentisia-client-side.web.app/"
+              className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
+              target={'_blank'}
+              ></a>
+            <button className="text-center text-white font-semibold z-10 pointer-events-none">
+              Live Link
+            </button>
+          </div>
+          <div className="h-16 md:w-52 flex justify-center items-center">
+            <a
+              href="https://github.com/NurulIslam96/Dentisia-ServiceAdd-Client"
+              target={'_blank'}
+              className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
+            ></a>
+            <span className="text-center text-white font-semibold z-10 pointer-events-none">
+              Client-Repository
+            </span>
+          </div>
+          <div className="h-16  md:w-52 flex justify-center items-center">
+            <a
+              href="https://github.com/Porgramming-Hero-web-course/b6a11-service-review-server-side-NurulIslam96"
+              target={'_blank'}
+              className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
+            ></a>
+            <span className="text-center text-white font-semibold z-10 pointer-events-none">
+            Server-Repository
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
