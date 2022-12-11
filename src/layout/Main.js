@@ -21,7 +21,7 @@ const Main = () => {
           <NavBar></NavBar>
         </div>
         <div className="relative">
-          <div className="bg-white bg-opacity-5 container mx-auto lg:h-[700px] md:h-[900px] w-full absolute rounded-md"></div>
+          <div className="bg-white bg-opacity-5 container mx-auto lg:h-[700px] md:h-screen w-full absolute rounded-md"></div>
           <Outlet></Outlet>
         </div>
       </div>

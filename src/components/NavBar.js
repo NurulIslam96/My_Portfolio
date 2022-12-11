@@ -17,7 +17,7 @@ const NavBar = () => {
             </span>
           </div>
           <div className="flex lg:gap-10 gap-2">
-            <div className="mx-auto h-16 md:w-32   lg:w-64 flex justify-center items-center">
+            <div className="mx-auto h-16 md:w-32 lg:w-64 flex justify-center items-center">
               <Link
                 to={"/"}
                 className="h-16 lg:w-64 md:w-32  bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"

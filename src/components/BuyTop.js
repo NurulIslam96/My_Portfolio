@@ -10,7 +10,7 @@ const BuyTop = () => {
       data-aos="fade-left"
       className="flex lg:flex-row flex-col gap-10 lg:justify-center justify-self-auto items-center lg:h-[700px] mg:px-0 px-5"
     >
-      <div className="w-96">
+      <div className="w-96 mt-5">
         <Slide>
           <div className="each-slide">
             <img src={image1} className="object-fit h-96 w-96" alt="" />
@@ -32,7 +32,7 @@ const BuyTop = () => {
         </p>
         <div>
           <span className="text-xl font-semibold">Features:</span>
-          <ul className="list-disc md:list-none ml-5">
+          <ul className="lg:list-disc md:list-none lg:ml-5">
             <li>Mobile/Tab Responsiveness.</li>
             <li>Admin Dashboard.</li>
             <li>Seller can Add and Advertise their products.</li>
@@ -48,6 +48,36 @@ const BuyTop = () => {
           Stripe, React-router-dom, React-date-picker, Date-fns, React-fa-icon,
           React-hot-toast.
         </h2>
+        <div className="flex md:flex-row flex-col gap-5 lg:justify-start md:justify-center ">
+          <div className="h-16 md:w-52 flex justify-center items-center">
+            <span
+              to={"/"}
+              onClick={()=>console.log("Hello")}
+              className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
+            ></span>
+            <button className="text-center text-white font-semibold z-10 pointer-events-none">
+              Live Link
+            </button>
+          </div>
+          <div className="h-16 md:w-52 flex justify-center items-center">
+            <span
+              to={"/"}
+              className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
+            ></span>
+            <span className="text-center text-white font-semibold z-10 pointer-events-none">
+              Client-Repository
+            </span>
+          </div>
+          <div className="h-16  md:w-52 flex justify-center items-center">
+            <span
+              to={"/"}
+              className="h-16 md:w-52 w-2/3 bg-gradient-to-br from-blue-400 to-blue-600 items-center rounded-md shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"
+            ></span>
+            <span className="text-center text-white font-semibold z-10 pointer-events-none">
+            Server-Repository
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
