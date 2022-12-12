@@ -26,9 +26,9 @@ const Home = () => {
             Skills.
           </p>
           <div className="flex items-center lg:justify-start justify-center text-3xl text-blue-300 gap-5 py-5">
-            <FaFacebookSquare />
-            <FaLinkedin />
-            <FaGithubSquare />
+            <a target='blank' href="https://www.facebook.com/nurul.islam.3273/"><FaFacebookSquare /></a>
+            <a target='blank' href="https://www.linkedin.com/in/md-nurul-islam-29452a257/"><FaLinkedin /></a>
+            <a target='blank' href="https://github.com/NurulIslam96"><FaGithubSquare /></a>
           </div>
         </div>
         <img src={image} className="h-96 pt-10" alt="" />
