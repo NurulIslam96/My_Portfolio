@@ -1,2 +1,2 @@
 # Portfolio Live Link:
-[nurul-islam96.netlify.app](https://nurul-islam96.netlify.app/)
+[target="_blank"](https://nurul-islam96.netlify.app/)
