@@ -1,2 +1,2 @@
 # Portfolio Live Link:
-<a href="https://www.google.com/" target="_blank">Google</a>
+<a href="https://nurul-islam96.netlify.app/" target="_blank">Live Link</a>
